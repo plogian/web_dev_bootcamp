@@ -1,0 +1,56 @@
+/*More css selectors https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048*/
+
+/*element*/
+li {
+
+}
+
+/*class*/
+.hello {
+
+}
+
+/*id*/
+#name {
+
+}
+
+/*all*/
+* {
+
+}
+
+/*descendant selector */
+
+li a {
+	/*will select all a tags within li*/
+}
+
+/*adjacent selector*/
+
+h4 + ul {
+	/*all uls that are siblings of h4. same level, 
+	not nested, as h4 */
+}
+
+/*attribute selector*/
+
+a[href="http://www.google.com"] {
+
+}
+
+/*nth of type*/
+
+ul:nth-of-type(3) {
+	background:purple;
+	/*every 3rd ul
+	if ot is lis, let's say, it selects every 3rd in 
+	a group*/
+}
+
+ul:nth-of-type(even) {
+	background:purple;
+	/*every 3rd ul
+	if ot is lis, let's say, it selects every 3rd in 
+	a group*/
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form>
+	<label for="fname">First Name:</label>
+	<input id="fname" name="firstname" type="text" placeholder="John" required>
+	<label for="lname">Last Name:</label>
+	<input id="lname" name="lastname" type="text" placeholder="Smith" required>
+	<div>
+	<label id="male">Male</label>
+	<input id="male" type="radio" name="gender" value="male" required>
+	<label id="female">Female</label>
+	<input id="female" type="radio" name="gender" value="female" required>
+	<label id="other">Other</label>
+	<input id="other" type="radio" name="gender" value="other" required>
+	</div>
+
+	<div>
+	<label id="email">Email:</label>
+	<input id="email" type="email" name="email" required placeholder="your email">
+	<label id="password">Password:</label>
+	<input id="password" type="password" pattern=".{5,10}" placeholder="your password" title="5 to 10 characters" required>
+	</div>
+
+	<div>
+	<label>
+	Birthday
+		<select name="month" required>
+			<!-- required doesn't do anything, because "month is a default" -->
+			<option>Month</option>
+			<option value="jan">January</option>
+			<option value="feb">February</option>
+			<option value="mar">March</option>
+		</select>
+		<select name="day" required>
+			<option>Day</option>
+			<option value="01">1</option>
+			<option value="02">2</option>
+			<option value="03">3</option>
+			<option value="04">4</option>
+			<option value="05">5</option>
+		</select>
+		<select name="year" required>
+			<option>Year</option>
+			<option>2017</option>
+			<option>2016</option>
+			<option>2015</option>
+			<option>2014</option>
+			<option>2013</option>
+			<!-- for the year, I don't mind if the year is sent to the form as is (i.e. I don't want to sent 17 instead of 2017, so I don't set the value="17" -->
+		</select>
+	</label>
+	</div>
+
+	<div>
+	<label id="agreement">I agree to the terms and conditions</label>
+	<input id="agreement" type="checkbox" name="agreed" required>
+	</div>
+
+	<div>
+	<button>Submit!</button>
+	</div>
+</form>
+</body>
+</html>

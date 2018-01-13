@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+<h1>A Simple Form</h1>
+
+<form>
+	<label>
+	Username:
+	<input name="username" type="text" placeholder="username">
+	</label>
+
+	<label>
+	Password
+	<input name="password" type="password" placeholder="password">
+	</label>
+	<input type="submit">
+</form>
+
+<form>
+	<label for="email"">Email</label>
+	<input id="email" name="email" type="email" placeholder="email" required>
+	
+
+	<label for="password">Password</label>
+	<input id="password" name="password" type="password" placeholder="password" required>
+	<input type="submit">
+</form>
+
+
+
+	<p>Do you prefer cats or dogs?</p>
+<form>
+	<label for="dogs">Dogs</label>
+	<input type="radio" id="dogs" name="petchoice" value=”DOGS”>
+	<label for="cats">Cats</label>
+	<input type="radio" id="cats" name="petchoice" value=”CATS”>
+	<button>Go!</button>
+</form>
+
+<p>What's your favorite color?</p>
+<form>
+	<select name="color">
+		<option>Red</option>
+		<option>Orange</option>
+		<option>Yellow</option>
+	</select>
+	<button>Go!</button>
+</form>
+
+<p>What's your mood?</p>
+<form>
+	<select name="mood">
+		<option value=”happy”>:)</option>
+		<option value=”sad”>:(</option>
+		<option value=”neutral”>:/</option>
+	</select>
+	<button>Go!</button>
+</form>
+
+<form>
+	<textarea name="paragraph" rows="10" cols="10"></textarea>
+</form>
+
+</body>
+</html>

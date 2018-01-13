@@ -1,0 +1,93 @@
+#container {
+	margin: 100px auto;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+	width: 360px;
+	background: #F7F7F7;
+}
+
+h1 {
+	background: #666600;
+	color: white;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 10px 20px;	
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.fa-pencil {
+	float: right;
+}
+
+html {
+	height: 100%;
+	font-family: Roboto;
+	/*background gradient from uigrad*/
+	background-repeat: 
+	background: #666600;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(#999966, #666600);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(#999966, #666600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul {
+	/*no bullet points is list-style: none*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+/*every other li*/
+li:nth-child(2n){
+	background: #F7F7F7;
+}
+
+input {
+	font-size: 18px;
+	background-color: #F7F7F7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	/*sizing includes content and padding, not margin
+	This is something we need to use web kits for*/
+	box-sizing: border-box;
+	color: #666600;
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input::placeholder {
+	color: lightGrey;
+}
+
+input:focus {
+	background: #FFFFFF;
+	border: 3px solid #666600;
+	outline: none;
+}
+
+.completed {
+	color: grey;
+	text-decoration: line-through;
+}
+
+span {
+	background: #e74c3c;
+	height: 40px;	
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
